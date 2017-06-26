@@ -28,3 +28,7 @@
 
 ;; Bind ac-js2 mode when js2-mode starts
 (add-hook 'js2-mode-hook 'ac-js2-mode)
+
+;; Indium package
+(unless (package-installed-p 'indium)
+  (package-install 'indium))
