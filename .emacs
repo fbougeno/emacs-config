@@ -32,3 +32,7 @@
 ;; Indium package
 (unless (package-installed-p 'indium)
   (package-install 'indium))
+ 
+;; Add Indium package for JS files.
+(require 'indium)
+(add-hook 'js-mode-hook #'indium-interaction-mode)
